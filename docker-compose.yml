@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:17
+    container_name: sgd-db
+    environment:
+      POSTGRES_DB: sgd
+      POSTGRES_USER: sgd
+      POSTGRES_PASSWORD: sgd
+    ports:
+      - "5440:5432"
+    volumes:
+      - sgd-pgdata:/var/lib/postgresql/data
+
+volumes:
+  sgd-pgdata:

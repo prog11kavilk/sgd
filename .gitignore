@@ -1,0 +1,31 @@
+# Java / Maven
+target/
+*.jar
+*.war
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+
+# Node / Angular
+node_modules/
+dist/
+.angular/
+*.log
+
+# IDEs
+.idea/
+*.iml
+.vscode/*
+!.vscode/extensions.json
+.settings/
+.classpath
+.project
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Variáveis de ambiente — nunca commitar
+.env
+.env.local
+application-local.yml
+application-secret.yml
